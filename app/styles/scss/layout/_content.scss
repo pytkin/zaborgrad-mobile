@@ -1,0 +1,38 @@
+// Content
+//
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 100vh;
+
+  .site-header {
+    flex: 0 0 48px;
+    width: 100%;
+  }
+  .site-footer {
+    flex: 0 0 36px;
+    width: 100%;
+  }
+  .site-content {
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(md) {
+    .site-header {
+      flex-basis: 72px;
+    }
+    .site-footer {
+      flex-basis: 68px;
+    }
+  }
+}
+
+.row {
+  @include clearfix();
+}

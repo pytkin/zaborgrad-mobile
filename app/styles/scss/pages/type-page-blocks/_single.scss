@@ -1,0 +1,30 @@
+//// Type page single
+//
+
+.type-page-single {
+  > header {
+    padding: 33px 24px;
+    text-align: center;
+
+    h2 {
+      font-size: 1rem;
+      line-height: 1.4;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+  > .block-body {
+    padding: 0 24px;
+    text-align: center;
+
+    .outline-embed {
+      margin: 0 -24px 35px;
+    }
+    .outline-block {
+      margin: 30px -24px;
+      padding: 30px 24px 20px;
+      background-color: #f5f8fa;
+    }
+  }
+}

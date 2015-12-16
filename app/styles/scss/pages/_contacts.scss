@@ -1,0 +1,13 @@
+@import "contacts-blocks/phones";
+@import "contacts-blocks/shedule";
+@import "contacts-blocks/offices";
+
+.contact-divider {
+  font-size: 1.286rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: #6b8123;
+  padding: 35px 0 40px;
+}

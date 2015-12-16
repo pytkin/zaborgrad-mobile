@@ -1,0 +1,87 @@
+// Main promo slider
+//
+
+.main-promo-slider {
+
+  @include media-breakpoint-up(md) {
+    .item-header {
+      padding: 135px 0 190px;
+      background-image: url('../img/static/main-promo-slider-sky.jpg');
+
+      .item-title {
+        font-size: 3.429rem;
+        margin-bottom: 25px;
+      }
+      .item-descr {
+        font-size: 1.286rem;
+        padding: 0 185px;
+      }
+    }
+  }
+
+  .item-header {
+    position: relative;
+    background: url('../img/static/main-promo-slider-sky-small.jpg') no-repeat 0 0/100% auto;
+    padding: 50px 0 96px;
+    margin-bottom: -64px;
+    text-align: center;
+    color: #fff;
+
+    .item-title {
+      font-family: $font-family-alt;
+      font-size: 2.143rem;
+      line-height: 1;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .item-descr {
+      padding: 0 35px;
+      font-size: 1rem;
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .item-footer {
+    position: relative;
+    padding: 118px 0 102px;
+    z-index: 2;
+    text-align: center;
+
+    .btn {
+      min-width: 190px;
+
+      @include media-breakpoint-up(md) {
+        min-width: 272px;
+      }
+    }
+  }
+  .owl-controls {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 18px;
+    z-index: 3;
+  }
+  .item-01 {
+    .item-footer {
+      background: url('../img/static/main-promo-slider-fence-01.png') repeat-x center/auto 100%;
+    }
+  }
+  .item-02 {
+    .item-footer {
+      background: url('../img/static/main-promo-slider-fence-02.png') repeat-x center/auto 100%;
+    }
+  }
+  .item-03 {
+    .item-footer {
+      background: url('../img/static/main-promo-slider-fence-03.png') repeat-x center/auto 100%;
+    }
+  }
+  .item-04 {
+    .item-footer {
+      background: url('../img/static/main-promo-slider-fence-04.png') repeat-x center/auto 100%;
+    }
+  }
+}

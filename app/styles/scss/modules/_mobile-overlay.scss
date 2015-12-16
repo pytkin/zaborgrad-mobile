@@ -1,0 +1,150 @@
+// Mobile overlay
+//
+
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 2010;
+  display: none;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+  opacity: 0;
+  will-change: opacity, display, overflow;
+
+  &.in {
+    .overlay-content {
+      transform: translate(0, 0);
+    }
+  }
+
+  .overlay-content {
+    width: 960px;
+    padding: 0 80px;
+    margin: 0 auto;
+    transform: translate(0, -25%);
+    transition: transform .3s ease-in-out;
+    will-change: transform;
+  }
+  .overlay-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    .overlay-icon {
+      display: inline-block;
+      height: 43px;
+    }
+    .icon,
+    [data-icon] {
+      color: $brand-primary;
+      width: 179px;
+      height: 43px;
+      text-decoration: none;
+    }
+    .close-link {
+      text-decoration: none;
+      display: block;
+      width: 29px;
+      height: 29px;
+
+      .bar {
+        display: block;
+        height: 3px;
+        width: 29px;
+        background-color: #000;
+
+        &:first-child {
+          transform: rotate(45deg) translateY(9px) translateX(9px);
+        }
+        &:last-child {
+          transform: rotate(-45deg) translateY(7px) translateX(-7px);
+        }
+      }
+    }
+  }
+  .overlay-nav {
+    list-style: none;
+    margin: 0 0 72px;
+    padding: 0;
+    border-bottom: 1px solid #d5d5d5;
+
+    li {
+      display: block;
+      border-top: 1px solid #d5d5d5;
+      text-align: center;
+      font-weight: 300;
+      font-size: 2.143rem;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 40px 0;
+    }
+  }
+}
+
+.overlay-open {
+  overflow: hidden;
+
+  .mobile-overlay {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+.overlay-contacts {
+  letter-spacing: 0.025em;
+  text-align: center;
+  padding-bottom: 72px;
+
+  > header {
+    margin-bottom: 50px;
+
+    h2 {
+      font-size: 2.571rem;
+      line-height: 1;
+      font-weight: 500;
+      margin: 0;
+      color: #000;
+    }
+  }
+  > .block-body {
+    font-size: 1.714rem;
+    font-weight: 300;
+
+    .phone {
+      display: block;
+      font-size: 2.571rem;
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+    .email {
+      margin-bottom: 40px;
+
+      a {
+        color: $brand-primary;
+        line-height: 1.1;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid;
+
+        @include hover {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+    address {
+      margin-bottom: 0;
+
+      strong {
+        font-weight: 500;
+      }
+    }
+  }
+}

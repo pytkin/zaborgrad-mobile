@@ -1,0 +1,75 @@
+// Contacts phones
+//
+
+.contact-phones {
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+  }
+  .top-panel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.286rem;
+    min-height: 144px;
+    background-color: #6b8123;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(md) {
+      min-height: 224px;
+
+      strong {
+        display: block;
+        margin-top: 15px;
+        font-size: 3.429rem;
+      }
+    }
+
+    strong {
+      font-size: 2.286rem;
+    }
+    &:after {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: ' ';
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(107, 129, 35, 0);
+      border-top-color: #6b8123;
+      border-width: 15px;
+      margin-left: -15px;
+    }
+  }
+  .bottom-panel {
+    background-color: #57691c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 125px;
+    font-size: 1rem;
+
+    strong {
+      font-size: 1.714rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      min-height: 142px;
+      font-size: 1.286rem;
+
+      strong {
+        display: block;
+        margin-top: 5px;
+        font-size: 2.143rem;
+      }
+    }
+  }
+}

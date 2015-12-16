@@ -1,0 +1,101 @@
+//// Main promo text
+//
+
+.main-our-works {
+  position: relative;
+
+  > header {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    z-index: 3;
+
+    @include media-breakpoint-up(md) {
+      top: 59px;
+
+      h2 {
+        font-size: 1.286rem;
+      }
+    }
+
+    h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin: 0;
+      font-weight: bold;
+    }
+  }
+  > .block-body {
+    .btn {
+      display: block;
+      max-width: 170px;
+      margin: 20px auto 22px;
+      font-size: 0.714rem;
+    }
+    .owl-controls {
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
+      left: 20px;
+      z-index: 4;
+      height: 35px;
+
+      @include media-breakpoint-up(md) {
+        left: 235px;
+        right: 235px;
+        bottom: 20px;
+        height: 65px;
+
+        .owl-buttons {
+          height: 65px;
+        }
+        .owl-next,
+        .owl-prev {
+          font-size: 65px;
+          height: 65px;
+        }
+      }
+
+      .owl-buttons {
+        height: 35px;
+      }
+      .fa {
+        vertical-align: top;
+      }
+      .owl-next {
+        color: #fff;
+        float: right;
+        height: 35px;
+        font-size: 35px;
+      }
+      .owl-prev {
+        color: #fff;
+        height: 35px;
+        font-size: 35px;
+      }
+    }
+    .slider-counter {
+      position: relative;
+      margin-bottom: -24px;
+      z-index: 3;
+      top: -60px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: #fff;
+      font-size: 1.286rem;
+
+      @include media-breakpoint-up(md) {
+        font-size: 2.143rem;
+        top: -74px;
+      }
+
+      strong {
+        font-weight: 500;
+      }
+    }
+  }
+}

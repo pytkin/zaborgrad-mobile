@@ -1,0 +1,49 @@
+// Our contacts
+//
+
+.our-contacts {
+  padding: 35px 0;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    > header {
+      margin-bottom: 45px;
+
+      h2 {
+        font-size: 1.286rem;
+      }
+    }
+    > .block-body {
+      .contact-phone {
+        font-size: 3.429rem;
+      }
+      .contact-email {
+        font-size: 1.286rem;
+      }
+    }
+  }
+
+  > header {
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+  > .block-body {
+    .contact-phone {
+      font-size: 2.143rem;
+      line-height: 1;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .contact-email {
+      color: $brand-secondary;
+      font-weight: 500;
+    }
+  }
+}

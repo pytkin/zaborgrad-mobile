@@ -1,0 +1,72 @@
+// Type action steps
+//
+
+.type-action-steps {
+  text-align: center;
+  background-color: #f5f8fa;
+  padding: 24px 24px 35px;
+  color: #333;
+  font-size: 0.929rem;
+
+  @include media-breakpoint-up(md) {
+    padding: 60px 70px 70px;
+    font-size: 1.143rem;
+
+    .step-list {
+      padding: 60px 65px 50px;
+
+      li:before {
+        width: 100px;
+        height: 100px;
+        font-size: 3.429rem;
+      }
+      & + .note {
+        font-size: 1.714rem;
+      }
+    }
+  }
+
+  .step-list {
+    list-style: none;
+    padding: 30px 18px;
+    margin: 0 auto 27px;
+    border: 1px dashed #c3c5c7;
+    border-radius: 5px;
+    counter-reset: section;
+    max-width: 625px;
+
+    li {
+      display: block;
+      margin-bottom: 30px;
+
+      &:before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        background-color: $brand-secondary;
+        counter-increment: section;
+        content: counters(section, ".");
+        color: #fff;
+        border-radius: 50%;
+        margin: 0 auto 25px;
+        font-weight: bold;
+        font-size: 2.143rem;
+        line-height: 1;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    & + .note {
+      display: block;
+      color: #808080;
+      margin-bottom: 35px;
+    }
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

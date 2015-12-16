@@ -1,0 +1,137 @@
+// User reviews
+//
+
+.user-reviews {
+  padding: 40px 24px 70px;
+  text-align: center;
+  background-color: #f5f8fa;
+
+  @include media-breakpoint-up(md) {
+    padding: 60px 72px 80px;
+  }
+
+  > header {
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 1.286rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+  > .block-body {
+    font-size: 0.929rem;
+    max-width: 624px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.143rem;
+
+      .btn:last-of-type {
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+        padding: 20px 54px 20px 26px;
+
+        .fa {
+          font-size: 25px;
+          margin-right: 35px;
+        }
+      }
+    }
+  }
+  .owl-controls {
+    position: absolute;
+    top: -129px;
+    right: 0;
+    left: 0;
+    @include clearfix();
+
+    @include media-breakpoint-up(md) {
+      left: 50px;
+      right: 50px;
+      top: -189px;
+
+      .fa {
+        font-size: 70px;
+      }
+    }
+  }
+  .owl-next,
+  .owl-prev {
+    .fa {
+      font-size: 35px;
+      color: #aaacad;
+
+      @include hover {
+        color: $brand-primary;
+      }
+    }
+  }
+  .owl-prev {
+    float: left;
+  }
+  .owl-next {
+    float: right;
+  }
+  .slider-counter {
+    position: relative;
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+
+    @include media-breakpoint-up(md) {
+      height: 290px;
+    }
+
+    .count {
+      font-size: 1.714rem;
+      line-height: 1;
+      position: relative;
+      top: -6px;
+      z-index: 3;
+
+      @include media-breakpoint-up(md) {
+        font-size: 2.143rem;
+      }
+    }
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+  .review-author {
+    font-size: 0.857rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    line-height: 1;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1rem;
+    }
+  }
+  .review-text {
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 1rem;
+    }
+  }
+  .reviews-slider {
+    margin-bottom: 65px;
+  }
+  .fa-pencil {
+    font-size: 22px;
+    vertical-align: middle;
+    position: relative;
+    margin-top: -3px;
+    margin-right: 18px;
+  }
+}

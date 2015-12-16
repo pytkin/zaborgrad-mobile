@@ -1,0 +1,111 @@
+// Type action promo
+//
+
+.type-action-promo {
+  background-color: $brand-primary;
+  color: #fff;
+  padding: 35px 24px 12px;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    padding: 110px 72px 40px;
+
+    > header {
+      margin-bottom: 105px;
+
+      h2 {
+        font-size: 3.429rem;
+      }
+    }
+    > .block-body {
+      font-size: 1rem;
+
+      h3 {
+        font-size: 1.286rem;
+        margin-bottom: 20px;
+      }
+    }
+    .action-slider {
+      margin-bottom: 95px;
+    }
+    .item-price {
+      padding: 36px 0 110px;
+      font-size: 2.143rem;
+    }
+    .item-discount {
+      top: 80px;
+      font-size: 6.429rem;
+    }
+    .icon-comment-count-circle {
+      width: 280px;
+      height: 280px;
+    }
+  }
+
+  > header {
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 1.286rem;
+      line-height: 1;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+  }
+  > .block-body {
+    font-size: 0.857rem;
+
+    h3 {
+      font-size: 0.857rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .action-slider {
+    margin-bottom: 55px;
+
+    .item {
+      position: relative;
+    }
+    .owl-page {
+      span {
+        background-color: transparent !important;
+        border: 1px solid #fff;
+      }
+
+      &.active {
+        span {
+          opacity: 1;
+          background-color: #fff !important;
+        }
+      }
+    }
+  }
+  .item-price {
+    padding: 10px 0 22px;
+    font-size: 1.143rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+  }
+  .item-discount {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    right: 0;
+    font-size: 2.857rem;
+    line-height: 1;
+    font-weight: bold;
+    color: $brand-primary;
+    z-index: 3;
+  }
+  .icon-comment-count-circle {
+    width: 120px;
+    height: 120px;
+  }
+}

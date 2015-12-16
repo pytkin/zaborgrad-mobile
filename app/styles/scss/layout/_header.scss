@@ -1,0 +1,86 @@
+// Header
+//
+
+.site-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1), inset 0 0 0 1px #f9f9fa;
+  padding-right: 15px;
+
+  @include media-breakpoint-up(md) {
+    min-height: 72px;
+    padding-right: 24px;
+  }
+
+  .mobile-menu-handler {
+    width: 49px;
+    height: 48px;
+    border-right: 1px solid #f2f2f2;
+    flex: 0 0 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 15px;
+
+    @include media-breakpoint-up(md) {
+      width: 73px;
+      height: 72px;
+      flex-basis: 73px;
+      margin-right: 23px;
+
+      .bar {
+        width: 22px;
+        height: 4px;
+        flex-basis: 4px;
+
+        & + .bar {
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .bar {
+      flex: 0 0 2px;
+      background-color: #000;
+      width: 16px;
+      height: 2px;
+
+      & + .bar {
+        margin-top: 4px;
+      }
+    }
+  }
+  .logo {
+    display: inline-block;
+    background: url('../img/static/logo.png') no-repeat 0 0/90px 15px;
+    width: 90px;
+    height: 15px;
+    position: relative;
+    top: 2px;
+
+    @include media-breakpoint-up(md) {
+      background-size: 150px 24px;
+      width: 150px;
+      height: 24px;
+    }
+  }
+  .header-contact-phone {
+    flex: 1 0;
+    font-weight: 500;
+    font-size: 0.857rem;
+    text-align: right;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.286rem;
+    }
+
+    strong {
+      color: $brand-primary;
+    }
+  }
+}

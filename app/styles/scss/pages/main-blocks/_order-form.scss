@@ -1,0 +1,78 @@
+// Main order form
+//
+
+.main-order-form {
+  padding: 35px 44px 40px;
+  background-color: $brand-secondary;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 55px;
+    padding-bottom: 80px;
+  }
+
+  legend {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.286rem;
+      margin-bottom: 55px;
+    }
+  }
+  .form-group {
+    margin: 0 auto 20px;
+    max-width: 272px;
+  }
+  .form-control {
+    font-size: 0.714rem;
+    padding: 16px 15px;
+    text-transform: uppercase;
+    color: #b2b2b2;
+    border-radius: 2px;
+    font-weight: 500;
+    border: none;
+    letter-spacing: 0.1em;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
+
+    @include media-breakpoint-up(md) {
+      padding: 21px 20px;
+      font-size: 1rem;
+    }
+
+    &::placeholder {
+      color: #b2b2b2;
+    }
+  }
+  .form-actions {
+    padding-top: 10px;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 20px;
+    }
+  }
+  .btn {
+    font-size: 0.786rem;
+    letter-spacing: 0.1em;
+    display: block;
+    max-width: 272px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 2px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1rem;
+    }
+
+    &:active {
+      background-color: #57691c;
+      border-color: #57691c;
+    }
+  }
+}
