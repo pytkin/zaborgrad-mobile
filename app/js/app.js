@@ -1,12 +1,10 @@
-/* global FastClick, renderIcons, Slideout, ymaps, alert */
+/* global FastClick, renderIcons, ymaps, alert */
 
 $(function () {
 	'use strict';
 
 	// Attach fastclick for mobiles (https://github.com/ftlabs/fastclick)
 	FastClick.attach(document.body);
-
-
 
 	if ($('.offices-list .map-holder').length > 0) {
 		$.getScript('http://api-maps.yandex.ru/2.1/?lang=ru_RU', function () {
@@ -67,19 +65,19 @@ $(function () {
 		}
 	});
 
-	(function () {
-		var slideout = new Slideout({
-			panel: $('.site-wrapper').get(0),
-			menu: $('.slideout-menu').get(0),
-			padding: 230,
-			tolerance: 70
-		});
+	// (function () {
+	// 	var slideout = new Slideout({
+	// 		panel: $('.site-wrapper').get(0),
+	// 		menu: $('.slideout-menu').get(0),
+	// 		padding: 230,
+	// 		tolerance: 70
+	// 	});
 
-		$('.js-slideout-handler').on('click', function (event) {
-			event.preventDefault();
-			slideout.toggle();
-		});
-	})();
+	// 	$('.js-slideout-handler').on('click', function (event) {
+	// 		event.preventDefault();
+	// 		slideout.toggle();
+	// 	});
+	// })();
 
 	// User reviews
 	$('.user-reviews .reviews-slider').owlCarousel({
@@ -110,6 +108,15 @@ $(function () {
 		navigation: false,
 		items: 1,
 		singleItem: true
+	});
+
+	$('.table-wrapper').mCustomScrollbar({
+		axis: 'x',
+		scrollbarPosition: 'outside',
+		scrollInertia: 0,
+		mouseWheel: {
+			enable: false
+		}
 	});
 
 });

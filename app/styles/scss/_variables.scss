@@ -584,14 +584,6 @@ $state-danger-border:            darken($state-danger-bg, 5%) !default;
 // $list-group-link-heading-color: #333 !default;
 
 
-// Image thumbnails
-
-// $thumbnail-padding:           .25rem !default;
-// $thumbnail-bg:                $body-bg !default;
-// $thumbnail-border:            #ddd !default;
-// $thumbnail-border-radius:     $border-radius !default;
-
-
 // Breadcrumbs
 
 // $breadcrumb-padding-vertical:   .75rem !default;
@@ -637,3 +629,11 @@ $state-danger-border:            darken($state-danger-bg, 5%) !default;
 // $pre-color:                   $gray-dark !default;
 // $pre-border-color:            #ccc !default;
 // $pre-scrollable-max-height:   340px !default;
+
+// Image thumbnails
+
+$thumbnail-padding:           .25rem !default;
+$thumbnail-bg:                $body-bg !default;
+$thumbnail-border-width:      $border-width !default;
+$thumbnail-border-color:      #ddd !default;
+$thumbnail-border-radius:     $border-radius !default;
