@@ -79,6 +79,16 @@ $(function () {
 	// 	});
 	// })();
 
+	$('.js-slideout-handler').on('click', function (event) {
+		event.preventDefault();
+		$('.slideout-menu').addClass('menu-open');
+	});
+
+	$('.slideout-menu').on('click', '.close-link', function (event) {
+		event.preventDefault();
+		$('.slideout-menu').removeClass('menu-open');
+	});
+
 	// User reviews
 	$('.user-reviews .reviews-slider').owlCarousel({
 		slideSpeed: 400,
@@ -121,6 +131,14 @@ $(function () {
 	});
 
 	// Tooltips
-	$('[data-toggle="tooltip"]').tooltip();
+	$('[data-toggle="tooltip"]').tooltip({
+		trigger: 'click'
+	});
+
+	$(document).on('show.bs.tooltip', function (event) {
+		$(event.target).text('X');
+	}).on('hide.bs.tooltip', function (event) {
+		$(event.target).text('?');
+	});
 
 });

@@ -8,9 +8,10 @@
   align-items: flex-start;
   flex-wrap: wrap;
   min-height: 100vh;
+  padding-top: 48px;
 
   .site-header {
-    flex: 0 0 48px;
+    //flex: 0 0 48px;
     width: 100%;
   }
   .site-footer {
@@ -24,9 +25,11 @@
   }
 
   @include media-breakpoint-up(md) {
-    .site-header {
-      flex-basis: 72px;
-    }
+    padding-top: 72px;
+
+    // .site-header {
+    //   flex-basis: 72px;
+    // }
     .site-footer {
       flex-basis: 68px;
     }

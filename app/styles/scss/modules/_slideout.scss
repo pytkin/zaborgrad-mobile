@@ -8,10 +8,49 @@
   bottom: 0;
   right: 0;
   z-index: 0;
-  width: 230px;
   overflow-y: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   display: none;
+  z-index: 100;
+  background-color: #fff;
+
+  &.menu-open {
+    display: block;
+    animation: .3s showSlideoutMenu ease-in-out;
+  }
+
+  .close-link {
+    position: absolute;
+    text-decoration: none;
+    display: block;
+    right: 8px;
+    top: 6px;
+    padding: 9px;
+    font-size: 45px;
+    line-height: 1;
+    color: #333;
+    height: 34px;
+    vertical-align: middle;
+
+    @include media-breakpoint-up(md) {
+      right: 15px;
+      top: 16px;
+      font-size: 55px;
+      height: 38px;
+
+      span {
+        top: -23px;
+      }
+    }
+
+
+    span {
+      display: inline-block;
+      position: relative;
+      top: -18px;
+    }
+  }
 
   @include media-breakpoint-up(md) {
     ul {
@@ -54,23 +93,10 @@
       flex-direction: column;
       font-size: 0.714rem;
       line-height: 1.5;
-      padding: 0 20px;
+      padding: 0 60px 0 20px;
       min-height: 47px;
     }
   }
 }
 
-.slideout-panel {
-  position: relative;
-  z-index: 1;
-}
 
-.slideout-open,
-.slideout-open body,
-.slideout-open .slideout-panel {
-  overflow: hidden;
-}
-
-.slideout-open .slideout-menu {
-  display: block;
-}
