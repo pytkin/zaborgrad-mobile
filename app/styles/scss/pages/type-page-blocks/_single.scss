@@ -55,6 +55,8 @@
       table {
         width: 100%;
         text-align: left;
+        max-width: 700px;
+        margin: 0 auto;
 
         td {
           vertical-align: top;
@@ -71,6 +73,8 @@
       }
     }
     .table-wrapper {
+      display: flex;
+      justify-content: center;
       height: auto;
       max-width: 100%;
       overflow: auto;
@@ -136,7 +140,8 @@
     .image-grid {
       display: flex;
       flex-direction: column;
-      margin-bottom: 30px;
+      max-width: 620px;
+      margin: 0 auto 30px;
 
       @include media-breakpoint-up(md) {
         flex-direction: row;

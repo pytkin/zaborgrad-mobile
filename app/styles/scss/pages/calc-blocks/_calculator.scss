@@ -1,0 +1,206 @@
+// Calculator
+//
+
+.calculator {
+  > header {
+    padding: 34px 24px;
+    background-color: #f8fbfd;
+
+    @include media-breakpoint-up(md) {
+      padding: 60px 72px;
+
+      h2 {
+        margin-bottom: 60px;
+      }
+    }
+
+    h2 {
+      font-size: 1.286rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 0 0 34px;
+      text-align: center;
+    }
+    .nav-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      list-style: none;
+      margin: 0 -5px;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin: 0 5px 10px;
+
+        &.active {
+          a {
+            background-color: #6b8123;
+            color: #fff;
+          }
+        }
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.857rem;
+        line-height: 1.25;
+        color: #666;
+        font-weight: bold;
+        background-color: #e8ebed;
+        border-radius: 2px;
+        padding: 16px 20px;
+
+        @include hover {
+          background-color: #6b8123;
+          color: #fff;
+        }
+      }
+    }
+  }
+  form {
+    padding: 14px 24px 40px;
+
+    @include media-breakpoint-up(md) {
+      max-width: 624px;
+      margin: 0 auto;
+      padding: 38px 0 80px;
+
+      .form-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 25px;
+      }
+      .form-col {
+        flex: 0 0 282px;
+      }
+      label {
+        font-size: 1.143rem;
+      }
+      .checkbox label {
+        font-size: 1rem;
+      }
+      .form-control {
+        padding: 10px 15px;
+      }
+      select.form-control {
+        background-position: 94% 18px;
+      }
+      .checkbox-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        list-style: none;
+        margin: 0;
+        padding: 20px 0 0;
+
+        li {
+          display: block;
+          flex: 0 0 210px;
+
+          & + li {
+            margin-left: 10px;
+          }
+        }
+      }
+      .form-actions {
+        .btn {
+          font-size: 1rem;
+          letter-spacing: 0.1em;
+
+          & + .btn {
+            margin-left: 20px;
+          }
+        }
+      }
+      &:last-of-type {
+        padding-bottom: 40px;
+      }
+    }
+
+    &:last-of-type {
+      max-width: 362px;
+      padding-bottom: 0;
+    }
+  }
+  .checkbox-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  label {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .input-group {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .form-control {
+    color: #808080;
+
+    &::placeholder {
+      color: #808080;
+    }
+  }
+  select.form-control {
+    appearance: none;
+    background: url('../img/static/select-arrow.svg') no-repeat 96% 12px/12px 8px;
+  }
+  .form-inline-helper {
+    flex: 0 0 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+  .form-actions {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 362px;
+    margin: 0 auto;
+
+    .btn {
+      flex: 1 1;
+
+      & + .btn {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+//
+// Tabbable tabs
+//
+
+// Hide tabbable panes to start, show them when `.active`
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
+  }
+}

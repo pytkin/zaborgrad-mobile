@@ -110,6 +110,7 @@ $(function () {
 		singleItem: true
 	});
 
+	// Scrollbar for responsive tables
 	$('.table-wrapper').mCustomScrollbar({
 		axis: 'x',
 		scrollbarPosition: 'outside',
@@ -118,5 +119,8 @@ $(function () {
 			enable: false
 		}
 	});
+
+	// Tooltips
+	$('[data-toggle="tooltip"]').tooltip();
 
 });
