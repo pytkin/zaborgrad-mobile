@@ -15,7 +15,7 @@ var del = require('del');
 
 gulp.task('styles', function () {
 	return gulp.src('app/styles/scss/main.scss')
-		.pipe($.sourcemaps.init())
+		// .pipe($.sourcemaps.init())
 		.pipe($.sass({
 			includePaths: ['bower_components/bootstrap/scss']
 		}))
@@ -30,7 +30,7 @@ gulp.task('styles', function () {
 			require('css-mqpacker'),
 			require('postcss-reporter')
 		]))
-		.pipe($.sourcemaps.write())
+		// .pipe($.sourcemaps.write())
 		.pipe(gulp.dest('.tmp/css'))
 		.pipe(reload({stream: true}));
 });
@@ -55,7 +55,7 @@ gulp.task('html', ['styles'], function () {
 		// .pipe(assets)
 		.pipe($.if('*.js', $.cache($.uglify())))
 		.pipe($.if('*.css', $.csscomb()))
-		.pipe($.if('*.css', $.csso()))
+		// .pipe($.if('*.css', $.csso()))
 		// .pipe(assets.restore())
 		.pipe(gulp.dest('dist'));
 });
