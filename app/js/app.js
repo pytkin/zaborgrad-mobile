@@ -7,7 +7,9 @@ $(function () {
 	FastClick.attach(document.body);
 
 	// Swipebox
-	$('.swipebox').swipebox();
+	$('.swipebox').swipebox({
+		useSVG: false
+	});
 
 	if ($('.offices-list .map-holder').length > 0) {
 		$.getScript('http://api-maps.yandex.ru/2.1/?lang=ru_RU', function () {
