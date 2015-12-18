@@ -2790,6 +2790,137 @@ input[type="button"].btn-block {
   padding-bottom: 100%;
 }
 
+.modal-open,.modal {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1450;
+  display: none;
+  -webkit-overflow-scrolling: touch;
+  outline: none;
+}
+.modal.fade .modal-dialog {
+  transition: -webkit-transform .3s ease-out;
+  transition:         transform .3s ease-out;
+  transition:         transform .3s ease-out, -webkit-transform .3s ease-out; 
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal-dialog {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  height: auto;
+  min-height: 100%;
+          flex-direction: column;
+
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 320px; 
+  padding: 80px 24px 122px;
+  font-size: 1rem;
+  text-align: center;
+  background-clip: padding-box;
+  outline: none;
+}
+.modal-content .close {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  display: block;
+  height: 34px;
+  padding: 0;
+  padding: 9px;
+  font-size: 45px;
+  line-height: 1;
+  color: #333;
+  text-decoration: none;
+  vertical-align: middle; 
+  background: none;
+  border: none;
+}
+.modal-content .close span {
+  position: relative;
+  top: -18px; 
+  display: inline-block;
+}
+.modal-content h3 {
+  margin-bottom: 30px; 
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1440;
+  background-color: #fff;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop.in {
+  opacity: 1;
+}
+
+.modal-body {
+  position: relative;
+}
+
+.modal-footer {
+  position: absolute;
+  right: 0; 
+  bottom: 72px;
+  left: 0;
+}
+
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
 .tooltip {
   position: absolute;
   z-index: 1070;
@@ -3650,8 +3781,8 @@ x-axis
   .btn {
     padding-top: 17px;
     padding-bottom: 17px; 
-    font-size: 1.286rem;
-    letter-spacing: .2em;
+    font-size: 1rem;
+    letter-spacing: .1em;
   }
 
   .btn-rounded {
@@ -4261,6 +4392,27 @@ x-axis
 
   .calculator-result-details .table-wrapper table tbody td {
     font-size: 1rem;
+  }
+
+  .modal-content {
+    padding-right: 72px;
+    padding-bottom: 129px; 
+    padding-left: 72px;
+  }
+
+  .modal-content h3 {
+    font-size: 1.286rem;
+  }
+
+  .modal-content .close {
+    top: 16px;
+    right: 15px;
+    height: 38px; 
+    font-size: 55px;
+  }
+
+  .modal-content .close span {
+    top: -23px;
   }
 
   .slideout-menu .close-link {

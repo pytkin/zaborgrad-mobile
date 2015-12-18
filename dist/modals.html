@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="cleartype" content="on">
+	    <meta name="HandheldFriendly" content="True">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="icon" href="favicon.ico">
+		<title>Заборград</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/icon-loader.js"></script>
+	</head>
+	<body>
+		<div class="modal fade" id="errorModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span>&times;</span>
+					</button>
+					<h3>системная ошибка</h3>
+					<p>Не все поля заполнены или данные были введены не верно, проверьте правильность заполненых данных.</p>
+
+					<div class="modal-footer">
+						<a href="#" class="btn btn-primary btn-rounded" data-dismiss="modal">вернуться назад</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="successModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span>&times;</span>
+					</button>
+					<h3>Спасибо!</h3>
+					<p>Ваша заявка отправлена, в ближайшее время наш оператор свяжется с вами, для уточнения заказа.</p>
+
+					<div class="modal-footer">
+						<a href="#" class="btn btn-secondary btn-rounded" data-dismiss="modal">закрыть окно</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="slideout-menu">
+			<a href="#" class="close-link"><span>&times;</span></a>
+			<ul>
+				<li><a href="#">главная</a></li>
+				<li><a href="#">о компании</a></li>
+				<li><a href="#">Из профнастила</a></li>
+				<li><a href="#">Металлический штакетник</a></li>
+				<li><a href="#">Деревянный забор</a></li>
+				<li><a href="#">Сетка рабица</a></li>
+				<li><a href="#">Сетка рабица</a></li>
+				<li><a href="#">Монолитные</a></li>
+				<li><a href="#">Строительные ограждения</a></li>
+				<li><a href="#">Системные ограждения 3D панели</a></li>
+				<li><a href="#">Теплицы из поликарбоната</a></li>
+				<li class="active"><span>фотогалерея</span></li>
+				<li><a href="#">отзывы</a></li>
+				<li><a href="#">калькулятор</a></li>
+				<li><a href="#">акции</a></li>
+				<li><a href="#">цены</a></li>
+				<li><a href="#">контакты</a></li>
+			</ul>
+		</nav>
+		<div class="site-wrapper">
+			<header class="site-header">
+				<a href="#" class="mobile-menu-handler js-slideout-handler">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</a>
+				<span class="logo"></span>
+				<span class="header-contact-phone">+7 <strong>(495)</strong> 215-22-33</span>
+			</header>
+			<main class="site-content">
+				<a href="#" data-toggle="modal" data-target="#errorModal">Error modal</a>
+				<a href="#" data-toggle="modal" data-target="#successModal">Success modal</a>
+				<section class="our-contacts">
+					<header>
+						<h2>звоните прямо сейчас</h2>
+					</header>
+					<div class="block-body">
+						<span class="contact-phone">+7 (495) 215-22-33</span>
+						<span class="contact-email"><a href="mailto:info@zaborgrad.ru">info@zaborgrad.ru</a></span>
+					</div>
+				</section>
+			</main>
+			<footer class="site-footer">
+				<span class="footer-copyright">Copyright 2015 zabograd.ru</span>
+			</footer>
+		</div>
+
+		<script src="js/common.js"></script>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -20,6 +20,36 @@
 		<!-- endbuild -->
 	</head>
 	<body>
+		<div class="modal fade" id="errorModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span>&times;</span>
+					</button>
+					<h3>системная ошибка</h3>
+					<p>Не все поля заполнены или данные были введены не верно, проверьте правильность заполненых данных.</p>
+
+					<div class="modal-footer">
+						<a href="#" class="btn btn-primary btn-rounded" data-dismiss="modal">вернуться назад</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="successModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span>&times;</span>
+					</button>
+					<h3>Спасибо!</h3>
+					<p>Ваша заявка отправлена, в ближайшее время наш оператор свяжется с вами, для уточнения заказа.</p>
+
+					<div class="modal-footer">
+						<a href="#" class="btn btn-secondary btn-rounded" data-dismiss="modal">закрыть окно</a>
+					</div>
+				</div>
+			</div>
+		</div>
 		<nav class="slideout-menu">
 			<a href="#" class="close-link"><span>&times;</span></a>
 			<ul>
@@ -53,38 +83,8 @@
 				<span class="header-contact-phone">+7 <strong>(495)</strong> 215-22-33</span>
 			</header>
 			<main class="site-content">
-				<section class="user-reviews">
-					<header>
-						<h2>Отзывы</h2>
-					</header>
-					<div class="block-body">
-						<p>На этой странице вы можете оставить свой отзыв о работе нашей компании</p>
-						<div class="reviews-slider">
-							<div class="item">
-								<div class="review-author">Николай Морозов</div>
-								<div class="review-text">
-									<p>Выражаю особую благодарность бригаде фирмы «Заборград», которая устанавливала мне забор из профнастила 31.05.2012 в садовом товариществе «Лесная поляна» вблизи пос. Коммунарка. Очень профессиональная и качественная работа, результатом очень доволен.</p>
-									<p>С уважением. Николай Морозов.</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="review-author">Николай Морозов</div>
-								<div class="review-text">
-									<p>Выражаю особую благодарность бригаде фирмы «Заборград», которая устанавливала мне забор из профнастила 31.05.2012 в садовом товариществе «Лесная поляна» вблизи пос. Коммунарка. Очень профессиональная и качественная работа, результатом очень доволен.</p>
-									<p>С уважением. Николай Морозов.</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="review-author">Николай Морозов</div>
-								<div class="review-text">
-									<p>Выражаю особую благодарность бригаде фирмы «Заборград», которая устанавливала мне забор из профнастила 31.05.2012 в садовом товариществе «Лесная поляна» вблизи пос. Коммунарка. Очень профессиональная и качественная работа, результатом очень доволен.</p>
-									<p>С уважением. Николай Морозов.</p>
-								</div>
-							</div>
-						</div>
-						<a href="#" class="btn btn-secondary btn-rounded"><span class="fa fa-pencil"></span>написать отзыв</a>
-					</div>
-				</section>
+				<a href="#" data-toggle="modal" data-target="#errorModal">Error modal</a>
+				<a href="#" data-toggle="modal" data-target="#successModal">Success modal</a>
 				<section class="our-contacts">
 					<header>
 						<h2>звоните прямо сейчас</h2>
