@@ -6,6 +6,9 @@ $(function () {
 	// Attach fastclick for mobiles (https://github.com/ftlabs/fastclick)
 	FastClick.attach(document.body);
 
+	// Swipebox
+	$('.swipebox').swipebox();
+
 	if ($('.offices-list .map-holder').length > 0) {
 		$.getScript('http://api-maps.yandex.ru/2.1/?lang=ru_RU', function () {
 			ymaps.ready(function () {
