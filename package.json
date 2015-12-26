@@ -1,9 +1,9 @@
 {
   "engines": {
-    "node": ">=4.2.3"
+    "node": ">=4.2.4"
   },
   "dependencies": {
-    "autoprefixer": "~6.1.2",
+    "autoprefixer": "~6.2.2",
     "browser-sync": "^2.10.0",
     "css-mqpacker": "^4.0.0",
     "del": "^2.2.0",
@@ -26,7 +26,6 @@
     "gulp-size": "^2.0.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-ssh": "^0.5.3",
-    "gulp-stylus": "^2.1.1",
     "gulp-svg-sprite": "^1.2.16",
     "gulp-svgmin": "^1.2.0",
     "gulp-svgstore": "^5.0.5",

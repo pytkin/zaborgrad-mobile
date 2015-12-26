@@ -2440,7 +2440,7 @@ input[type="button"].btn-block {
 .calculator form {
   padding: 14px 24px 40px;
 }
-.calculator form:last-of-type {
+.calculator form:last-of-type:not(:first-of-type) {
   max-width: 362px;
   padding-bottom: 0;
 }
@@ -4628,7 +4628,7 @@ html.swipebox-html.swipebox-touch {
     margin-left: 20px;
   }
 
-  .calculator form:last-of-type {
+  .calculator form:last-of-type:not(:first-of-type) {
     padding-bottom: 40px;
   }
 

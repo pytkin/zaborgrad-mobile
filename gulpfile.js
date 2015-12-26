@@ -194,6 +194,10 @@ gulp.task('build', ['jscodestyle', 'html', 'images', 'fonts', 'extras'], functio
 //     .pipe(gulp.dest('logs'))
 // });
 
+gulp.task('clear-cache', function (done) {
+  return $.cache.clearAll(done);
+});
+
 gulp.task('default', ['clean'], function () {
 	gulp.start('build');
 });

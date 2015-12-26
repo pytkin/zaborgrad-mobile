@@ -118,12 +118,12 @@
           }
         }
       }
-      &:last-of-type {
+      &:last-of-type:not(:first-of-type) {
         padding-bottom: 40px;
       }
     }
 
-    &:last-of-type {
+    &:last-of-type:not(:first-of-type) {
       max-width: 362px;
       padding-bottom: 0;
     }

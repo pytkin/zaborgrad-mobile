@@ -40,8 +40,8 @@
 		}
 	};
 	function renderSprite(path) {
-		var file = (path !== '' && typeof path !== 'undefined') ? path : 'img/sprites/svg_sprite.svg';
-		var revision = 1450256115;
+		var file = (path !== '' && typeof path !== 'undefined') ? path : 'images/sprites/svg_sprite.svg';
+		var revision = 1450847449;
 		if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect) {
 			document.createElement('svg');
 			document.createElement('use');
